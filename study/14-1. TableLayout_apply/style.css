@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  height: 80vh;
+  width: 100%;
+  background-color: #8caff1;
+  color: white;
+  font-size: 20px;
+  display: table;
+  border-spacing: 10vw;
+
+}
+
+div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+img {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+section {
+  display: table;
+  width: 86%;
+  height: 30vh;
+  margin: 5vh auto;
+  border-spacing: 1vw;
+  table-layout: fixed;
+}
+
+article {
+  display: table-cell;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2%;
+  font-size:13px;
+  
+}
+

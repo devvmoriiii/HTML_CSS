@@ -1,0 +1,200 @@
+*{padding:0;margin:0;}
+table{border-collapse: collapse;}
+
+.head{
+    width:1000px;
+    margin:0 auto;
+    margin-top:80px;
+    height:40px;
+    overflow:hidden;
+    line-height:40px;
+}
+
+.head>h4{
+    float:left;
+    font-weight:700;
+}
+
+.head>p{
+    float:right;
+    font-size:14px;
+    color:#808080;
+}
+
+.box{
+width:1000px;
+    height:150px;
+    border-top:2px solid grey;
+    border-bottom:2px solid grey;
+    overflow:hidden;
+    margin:0 auto;
+}
+
+.left{
+    width:500px;
+    height:150px;
+    float:left;
+    border:0px;
+}
+
+.left td{
+    border:0px;
+}
+.left td{
+    text-align:center;
+}
+
+.big{
+    font-size:30px;
+    font-weight:900;
+}
+
+.big>span{
+    color:#51aec3;
+}
+
+.text_left{
+    text-align:left;
+    line-height:25px;
+    font-size:15px;
+}
+
+.text_left>h4{
+    font-weight:500;
+}
+
+.text_left>span{
+    color:#51aec3;
+}
+
+.right{
+    height:120px;
+    width:450px;
+    margin-top:15px;
+    margin-bottom:15px;
+    float:right;
+    border:1px solid #c7c7c7;
+    border-left:0px;
+    border-right:0px;
+}
+
+.right th{
+    background-color:#ebebeb;
+    border:1px solid #c7c7c7;
+}
+
+.right td{
+    text-align:center;
+    border:1px solid #c7c7c7;
+    color:#626262;
+    font-weight:400;
+}
+
+.l_non{
+    border-left:0px;
+    
+  }
+.r_non{
+    border-right:0px;
+}
+
+.click{
+    width:1000px;
+    height:80px;
+    margin:40px auto;
+    overflow:hidden;
+}
+
+.ta_c{
+    width:1000px;
+    height:80px;
+    text-align:center;
+    border:1px solid #c7c7c7;
+}
+
+.c_l{
+    width:500px;
+    border:1px solid #c7c7c7;
+    color:#9a9a9a;
+}
+
+.c_r{
+    border:1px solid #c7c7c7;
+    color:#9a9a9a;
+}
+
+.c_l:hover{
+    color:#51aec3;
+    border-bottom: 1px solid #51aec3;
+}
+
+.c_r:hover{
+    color:#51aec3;
+    border-bottom: 1px solid #51aec3;
+}
+
+.chart{
+    width:1000px;
+    height:350px;
+    margin:40px auto;
+    overflow:hidden;
+    border-top:1px solid black;
+    border-bottom:1px solid #c7c7c7;
+    border-left:0px;
+    border-right:0px;
+    
+}
+
+.chart th{
+    border-top:1px solid black;
+    border-bottom:1px solid #c7c7c7;
+    border-left:0px;
+    border-right:0px;
+}
+
+.chart td{
+    text-align:center;
+    border-top:1px solid #c7c7c7;
+    border-bottom:1px solid #c7c7c7;
+    border-left:0px;
+    border-right:0px;
+    color:#626262;
+}
+
+.pdf{
+    background-color:beige;
+    display:block;
+    width:40px;
+    height:25px;
+    line-height:25px;
+    font-size:11px;
+    font-weight:900;
+    color:white;
+    background-color: #87d9b7;
+    margin:auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

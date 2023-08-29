@@ -1,0 +1,46 @@
+<?
+if(!function_exists("is_moblile"))
+{
+  function is_moblile()
+  {
+    $connet_m = $_SERVER['HTTP_USER_AGENT'];
+    if(strpos( $connet_m,  "iPhone", 0) > -1)
+    {
+      return "아이폰";
+    }  
+
+    if(strpos( $connet_m,  "Android", 0) > -1)
+    {
+      return "안드로이드";
+    }      
+    return 0;
+  }  
+} 
+
+if($PC_MODE == 'true') $_SESSION['PC_MODE'] = "true";
+
+if(is_moblile() && $_SESSION['PC_MODE'] != "true")
+{
+  header("location:http://i12free011.dothome.co.kr/mobile.html");
+}
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC용</title>
+  <style>
+    *{padding:0;margin:0;}
+
+    body{background-color: #a8c6ff;color:#f6f6f6;}
+
+    h1{padding-top:100px; text-align:center;}
+  </style>
+</head>
+<body>
+  <h1>PC 접속 화면입니다. <br />모바일 기기 접속 시 화면 전환되어집니다.</h1>
+</body>
+</html>

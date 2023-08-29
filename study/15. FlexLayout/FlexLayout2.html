@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Layout - Container 속성(1) </title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      background-color: cornflowerblue;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-bottom: 20px;
+      /* flex-wrap: nowrap; */
+      /* flex-flow: wrap column; */
+    }
+
+    .container2 {
+      background-color: lightcoral;
+      height: 50vh;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      /* align-items:baseline; */
+      align-content: space-around;
+    }
+
+    .item {
+      width: 200px;
+      background-color: bisque;
+      border: 1px solid black;
+      margin: 5px;
+    }
+
+    /* .container2 .item:nth-child(2){
+      line-height:30Vh;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item">flex_AA</div>
+    <div class="item">flex_BB</div>
+    <div class="item">flex_CC</div>
+    <div class="item">flex_DD</div>
+    <div class="item">flex_EE</div>
+
+  </div>
+  <div class="container2">
+    <div class="item">flex_AA</div>
+    <div class="item">flex_BB</div>
+    <div class="item">flex_CC</div>
+    <div class="item">flex_DD</div>
+    <div class="item">flex_EE</div>
+    <div class="item">flex_FF</div>
+    <div class="item">flex_GG</div>
+    <div class="item">flex_HH</div>
+
+  </div>
+</body>
+
+</html>

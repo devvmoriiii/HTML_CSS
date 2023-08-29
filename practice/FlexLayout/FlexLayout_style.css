@@ -1,0 +1,170 @@
+*{padding: 0; margin: 0;}
+a{text-decoration: none; color: inherit;}
+ul, ol, li{list-style: none;}
+img{display: block;}
+body{font-size: 14px; color:#333;}
+
+header{
+  width:100%;
+  height:10vh;
+  overflow: hidden;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  background-color: #a6dcdb;
+}
+
+header>a{
+  float:left;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 10vh;
+  padding: 0 30px;
+}
+
+header>ul{
+  float:right;
+  display:flex;
+  height:10vh;
+  align-items: center;
+}
+
+header ul li{
+  padding: 0 30px;
+}
+
+header ul li:hover{
+  font-weight:900;
+}
+
+.container{
+  display:flex;
+}
+
+nav{
+  flex: 1 1 15%;
+  height:80vh;
+  border-right: 1px solid #000;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+nav>h1{
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.keyword{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.item{
+  border:1px solid #000;
+  padding: 4px;
+  margin: 7px; 
+  font-size: 13px;  
+}
+
+.item:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+section{
+  height:80vh;
+  flex: 1 1 70%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.contents{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.img_item{
+  height:22.5vh; 
+  width:31.3%;
+  background: url(image/bg.jpg) no-repeat center center;
+  background-size: cover;
+  margin:0 1%;
+  margin-bottom: 3vh;
+}
+
+aside{
+  flex: 1 1 15%;
+  border-left: 1px solid #000;
+  height:80vh;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+aside>h1{
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+footer{
+  width:100%;
+  height:10vh;
+  border-top: 1px solid #fff;
+  text-align: center;
+  line-height: 10vh;
+  color: #fff;
+  background-color: #a6dcdb;
+}
+
+
+@media screen and (max-width:1024px) {
+  *{transition: all 0.3s ease;}
+  header ul li{transition:all 0s;}
+
+  .container{
+    flex-direction: column;
+  }
+
+  nav{
+    border-right: none;
+    border-bottom: 1px solid #000;
+  }
+
+  aside{
+    border-left: none;
+    border-top: 1px solid #000;
+  }
+
+  .img_item{
+    margin-bottom:1vh;
+  }
+}
+
+@media screen and (max-width:768px) {
+    *{transition: all 0.3s ease;}
+
+    header ul li{
+      display: none;
+    }
+
+    .img_item{
+      width:48%;
+      margin: 1%;
+      height:20vh;
+    }
+
+    .img_item:last-child{
+      display: none;
+    }
+
+    aside{
+      order:-2;
+      border: none;
+      background-color: #000;
+      color:#fff;
+    }
+
+    aside>h1{
+      text-decoration: none;
+    }
+}
+

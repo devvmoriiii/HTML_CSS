@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position</title>
+  <style>
+    * {padding: 0;margin:0;}
+  
+    div{
+      width:100px;
+      height:100px;
+      margin:10px 0px 10px 10px;
+      background-color: aquamarine;
+      text-align: center;
+      line-height: 100px;
+      font-size: 14px;
+    }
+
+    body{
+      height:3000px;
+      background-color:lightblue;
+    }
+  
+    .p1 {position:static;top:50px;left:50px;}
+    .p2 {position:relative;top:50px;left:150px; bottom:50px;}
+    .p3 {position:absolute;top:20px;left:200px;}
+    .p3-1{position:absolute;bottom:50px;right:100px;}
+    .p4{position:fixed; top:200px; left:300px;}
+
+  </style>
+</head>
+<body>
+  <h1>position</h1>
+  <p>요소를 특정한 위치로 지정하여 배치하는 속성 / 어떻게 위치할지 결정하는 속성</p>
+
+  <div class="p1">position1</div>
+  <div class="p2">position2</div>
+  <div class="p3">position3</div>
+  <div class="p3-1">position3-1</div>
+  <div class="p4">position4</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position2</title>
+  <style>
+    * {padding: 0;margin:0;}
+
+    body{
+      height:3000px;
+      background-color:lightblue;
+    }
+
+    .pbox{
+      width:200px;
+      height:200px;
+      background-color:lightcyan;
+      text-align:center;
+      line-height:200px;
+    }
+
+    .pbox:nth-child(1){
+      position:absolute;
+      top:30px;
+      left:30px;
+      z-index:3;
+    }
+
+    .pbox:nth-child(2){
+      background-color: lightgoldenrodyellow;
+      position:absolute;
+      top:60px;
+      left:60px;
+      z-index:4
+
+    }
+
+    .pbox:nth-child(3){
+      background-color: lightsalmon;
+      position:absolute;
+      top:90px;
+      left:90px;
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="pbox">box1</div>
+  <div class="pbox">box2</div>
+  <div class="pbox">box3</div>
+</body>
+</html>

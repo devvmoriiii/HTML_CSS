@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform_skew</title>
+  <style>
+    * {padding:0; margin:0;}
+
+    section{
+      width:200px;
+      height:200px;
+      border:5px solid black;
+      margin:100px;
+      display:inline-block;
+    }
+
+    div{
+      width:200px;
+      height:200px;
+      background-color:rgba(100, 148, 237, 0.525);
+      text-align:center;
+      line-height:200px;
+      font-size:20px;
+      font-weight:900;
+    }
+
+    #box1:hover{transition-duration: 0.5s;transform:skew(45deg, 45deg);}
+    #box2:hover{transition-duration: 0.5s;transform:skewX(45deg);}
+    #box3:hover{transition-duration: 0.5s;transform:skewY(45deg);}
+
+      
+
+  </style>
+</head>
+<body>
+  <section>
+    <div id="box1">transform1</div>
+  </section>
+  <section>
+    <div id="box2">transform2</div>
+  </section>
+  <section>
+    <div id="box3">transform3</div>
+  </section>
+
+</body>
+</html>

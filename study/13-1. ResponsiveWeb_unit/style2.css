@@ -1,0 +1,21 @@
+*{padding:0; margin:0;}
+
+.vw{
+  width:50vw;
+  height:50vh;
+  background-color:cornflowerblue;
+}
+
+@media screen and (max-width:767px) {
+  .vw{
+    width:80vw;
+    height:50vh;
+  }
+}
+
+html, body{font-size:10px;}
+
+#all{font-size:20px;}
+
+.em{font-size:2em;}
+.rem{font-size:2rem;}

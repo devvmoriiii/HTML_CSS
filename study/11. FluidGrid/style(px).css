@@ -1,0 +1,35 @@
+* {padding:0; margin:0;}
+
+#wrap{
+  width:1200px;
+  overflow:hidden;
+  margin:150px auto;
+  background-color: lightblue;
+}
+
+header{
+  width:1200px;
+  height:100px;
+  background-color:lightcyan;
+}
+
+section{
+  width:620px;
+  float:left;
+  height:200px;
+  background-color:lightgoldenrodyellow;
+}
+
+aside{
+  width:540px;
+  float:right;
+  height:200px;
+  background-color:lightpink; 
+}
+
+footer{
+  width:1200px;
+  height:100px;
+  background-color: lightgrey;
+  clear:both;
+}

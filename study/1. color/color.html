@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> 다양한 색상 표현 </title>
+        <style>
+            *{padding:0; margin:0;}
+            
+            div{
+                width:100%;
+                height:100px;
+                font-size:20px;
+                text-align:center;
+                line-height:100px;
+            }
+            
+            #word{background-color:red;}
+            #hex{background-color:#f00;}
+            #rgb{background-color:rgb(255, 0, 0)}
+            #rgba{background-color:rgba(255,0,0,0.5)}
+            #hsl{
+                background-color:hsl(0,100%,50%);
+                opacity:0.5;
+                }
+            #hsla{background-color:hsla(0,100%,50%,0.5)};
+        </style>
+    </head>
+    
+    <body>
+        <div id="word">단어: 단어로 입력하는 방식</div>
+        <div id="hex">헥스(=컬러코드): #웹번호로 입력하는 방식</div>
+        <div id="rgb">rgb : red, green, blue 의 숫자값을 입력하는 방식</div>
+        <div id="rgba">rgba : rgb 표현 방식에 더불어 alpha 값이 추가된 방식</div>
+        <div id="hsl">hsl : hue, saturation, lightness의 양값을 입력하는 방식</div>
+        <div id="hsla">hsla : hsl 표현 방식에 더불어 alpha 값이 추가된 방식</div>
+        
+    </body>
+</html>
